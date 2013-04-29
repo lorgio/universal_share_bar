@@ -1,0 +1,12 @@
+{
+  "name": "universal_share_bar",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "0.4.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-coffee": "~0.4.0",
+    "grunt-contrib-requirejs": "~0.4.0",
+    "grunt-contrib-handlebars": "~0.5.4",
+    "grunt-contrib-watch": "~0.3.1"
+  }
+}
