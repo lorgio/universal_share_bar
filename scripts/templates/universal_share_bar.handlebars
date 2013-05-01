@@ -1,22 +1,36 @@
+<div id="fb-root" />
 <div id="share-bar" style="">
   <div class="share-button facebook" id="fb-like">
-    <fb:like "data-href"={{production_uri_no_encode}} "data-send"="true" "data-layout"="box_count""data-width"="55" "data-show-faces"="false" "data-font"="arial" "ref"="tl-vert">
+    <fb:like "data-href"="{{url}}" "data-send"="true" "data-layout"="box_count""data-width"="55" "data-show-faces"="false" "data-font"="arial" "ref"="tl-vert">
     </fb:like>
   </div>
   <div class="share-button twitter">
+  <a href="http://twitter.com/share?url={{twitter.url}}{{twitter.short_description}}" "class"="twitter-share-button" "data-count"="vertical" "data-url" ="{{url}}" "data-via"="TravlandLeisure">
+  Tweet
+  </a>
   </div>
   <div class="share-button gplus">
+    <g:plusone "annotation"="none" "size"="tall" "href"="{{url}}" />
   </div>
   <div class="share-button pinit">
+    <a href="http://pinterest.com/pin/create/button/?url={{url}}&media={{likeable_image_url}}"
+    "class"="pin-it-button" "count-layout"="none">
+     Pin It
+     </a>
+  </div>
+  <div class="share-button">
+      <div class="kindleWidget">
+        <img src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"/>
+      </div>
   </div>
   <div class="share-button email mini">
   <a href="mailto:?subject=;body=" id="email-button">
-  <img src="/images/mail_icon.jpg" alt="">
+  <img src="http://www.travelandleisure.com/images/mail_icon.jpg" alt="">
   </a>
   </div>
   <div class="share-button mini print">
   <a alt="" href="javascript:window.print()" id="print">
-  <img src="/images/print_icon.jpg">
+  <img src="http://www.travelandleisure.com/images/print_icon.jpg">
   </a>
   </div>
 </div>

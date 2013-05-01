@@ -10,6 +10,10 @@ module.exports = function (grunt) {
       handlebars: {
         files: ["scripts/templates/universal_share_bar.handlebars", "scripts/templates/universal_share_bar_horizontal.handlebars"],
         tasks: ['handlebars']
+      },
+      sass: {
+        files: ['stylesheets/widgets.scss'], // 'destination' : 'source'
+        tasks: ['sass']
       }
     },
     clean: {
@@ -48,6 +52,27 @@ module.exports = function (grunt) {
           "scripts/javascripts/templates/universal_share_bar.js":  ["scripts/templates/universal_share_bar.handlebars", "scripts/templates/universal_share_bar_horizontal.handlebars"]
         }
       }
+    },
+    sass: {                              // Task
+      dist: {                            // Target
+        files: {                         // Dictionary of files
+          'styles/widgets.css': 'stylesheets/widgets.scss' // 'destination' : 'source'
+        }
+      },
+      dev: {                             // Another target
+        options: {                       // Target options
+          style: 'expanded'
+        }
+      }
+    },
+    connect: {
+      server: {
+        options: {
+          port: 9001,
+          base: './',
+          keepalive: true
+        }
+      }
     }
   });
 
@@ -56,9 +81,12 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
 
 
-  grunt.registerTask('default', ['clean', 'coffee', 'handlebars', 'requirejs']);
+
+  grunt.registerTask('default', ['clean', 'coffee', 'handlebars', 'requirejs', 'sass']);
 
 };

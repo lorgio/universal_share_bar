@@ -1,0 +1,106 @@
+/* Social Media Widgets used on Articles and Slideshows */
+#share-bar {
+  left: -68px;
+  width: 70px;
+  top: 435px;
+  display: block;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-right: none;
+  text-transform: uppercase;
+  font-family: Arial,sans-serif;
+  font-size: 0.8em;
+  text-align: center; }
+  #share-bar .share-button {
+    margin-bottom: 8px;
+    margin-top: 5px;
+    padding: 5px 5px 3px 5px;
+    text-align: center; }
+    #share-bar .share-button .sharethis {
+      border-top: 1px solid #ccc;
+      padding: 6px 0px 6px 7px;
+      margin: 0;
+      text-align: center; }
+    #share-bar .share-button .stumbleupon-badge {
+      width: 18px;
+      height: 18px;
+      display: block;
+      margin-left: 25px;
+      padding: 5px 5px 0px 5px;
+      text-align: center;
+      background: url("http://cdn.stumble-upon.com/i/badges/badgeLogo18x18.png") no-repeat scroll 0 0 transparent; }
+    #share-bar .share-button .kindleWidget {
+      display: inline-block;
+      padding: 3px;
+      cursor: pointer;
+      font-size: 11px;
+      font-family: Verdana;
+      white-space: nowrap;
+      line-height: 1;
+      border-radius: 3px;
+      border: #ccc thin solid;
+      color: black;
+      background: transparent url("https://d1xnn692s7u6t6.cloudfront.net/button-gradient.png") repeat-x;
+      background-size: contain; }
+    #share-bar .share-button .kindleWidget img {
+      vertical-align: middle;
+      margin: 0;
+      padding: 0;
+      border: none; }
+    #share-bar .share-button .share-button.email {
+      padding: 5px 0px 0px 0px; }
+    #share-bar .share-button .share-button.pinit {
+      padding: 8px 0 3px; }
+    #share-bar .share-button .share-button.mini {
+      border-top: 1px solid #ccc;
+      padding: 8px 24px 4px;
+      margin: 0;
+      text-align: center; }
+
+#share-bar-horz {
+  display: none;
+  margin: 10px 0px 20px 5px;
+  display: block;
+  background-color: white;
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: center; }
+  #share-bar-horz .share-button {
+    float: left;
+    margin: 0px 15px 0px 0px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: center; }
+    #share-bar-horz .share-button .facebook {
+      width: 130px;
+      margin-right: 15px; }
+    #share-bar-horz .share-button .twitter {
+      width: 95px; }
+    #share-bar-horz .share-button .gplus {
+      width: 55px; }
+    #share-bar-horz .share-button .pinit {
+      width: 35px;
+      margin-top: -2px;
+      margin-right: 25px; }
+    #share-bar-horz .share-button .email {
+      float: left;
+      height: 20px;
+      line-height: 20px;
+      vertical-align: center; }
+    #share-bar-horz .share-button .email-extend {
+      float: left;
+      height: 20px;
+      line-height: 20px;
+      vertical-align: center; }
+    #share-bar-horz .share-button .mini {
+      width: 25px;
+      margin-top: 1px; }
+    #share-bar-horz .share-button #stumbleupon-badge {
+      width: 18px;
+      height: 18px;
+      display: block;
+      margin-left: 0px;
+      padding: 5px 5px 0px 5px;
+      text-align: center;
+      background: url("http://cdn.stumble-upon.com/i/badges/badgeLogo18x18.png") no-repeat scroll 0 0 transparent; }
